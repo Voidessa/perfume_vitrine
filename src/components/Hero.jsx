@@ -1,72 +1,71 @@
 import React from 'react';
-import { Sparkles, ShieldCheck, Truck, Percent } from 'lucide-react';
+import { ArrowDownRight } from 'lucide-react';
 
-export default function Hero({ scrollToCatalog, scrollToQuiz }) {
+export default function Hero({ t, onOpenModal }) {
+  // Safe helper to highlight the "97$" in the translatable heading string
+  const renderHeading = (text) => {
+    if (!text) return '';
+    const parts = text.split(/(97\$)/g);
+    return parts.map((part, i) => 
+      part === '97$' ? <span key={i}>97$</span> : part
+    );
+  };
+
   return (
     <section className="hero">
+      {/* Background ambient glows */}
+      <div className="ambient-glow-1"></div>
+      
       <div className="container hero-grid">
-        {/* Left Side: Content */}
-        <div className="hero-content fade-in">
-          <div className="hero-tagline">
-            <Sparkles size={16} /> Умная роскошь
+        {/* Left: Content */}
+        <div className="hero-content">
+          <div className="ramadan-badge">
+            {t.ramadanBadge}
+          </div>
+          <div>
+            <span className="bonus-badge">
+              {t.bonusBadge}
+            </span>
           </div>
           <h1>
-            Витрина селективной парфюмерии <span>Mancera</span> и мировых брендов
+            {renderHeading(t.mainHeading)}
           </h1>
           <p className="hero-description">
-            Оригинальные ароматы в удобных объемах и тестерах от $97 до $120. Никакой переплаты за лишние миллилитры — только чистые эмоции и гарантированная стойкость.
+            {t.heroDesc}
           </p>
-
-          {/* Marketing Benefits */}
-          <div className="hero-benefits">
-            <div className="benefit-item">
-              <span className="benefit-icon">
-                <ShieldCheck size={20} />
-              </span>
-              <span>100% Оригинал (Гарантия)</span>
-            </div>
-            <div className="benefit-item">
-              <span className="benefit-icon">
-                <Truck size={20} />
-              </span>
-              <span>Быстрая отправка</span>
-            </div>
-            <div className="benefit-item">
-              <span className="benefit-icon">
-                <Percent size={20} />
-              </span>
-              <span>Лучшие цены сегмента</span>
-            </div>
-          </div>
-
-          {/* Action CTAs */}
-          <div className="hero-actions">
-            <button className="btn btn-primary" onClick={scrollToCatalog}>
-              Открыть витрину
-            </button>
-            <button className="btn btn-secondary" onClick={scrollToQuiz}>
-              Подобрать аромат
+          <div className="hero-btn-wrapper">
+            <button className="cta-button" onClick={() => onOpenModal()}>
+              <span>{t.heroCta}</span>
+              <ArrowDownRight size={20} />
             </button>
           </div>
         </div>
 
-        {/* Right Side: Visual */}
+        {/* Right: Visual (Composite floating bottles) */}
         <div className="hero-visual">
-          <div className="hero-image-container">
-            <img
-              src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&q=80&w=800"
-              alt="Mancera Cedrat Boise Premium Perfume"
+          <div className="composite-image-container">
+            <div className="floating-circle-bg"></div>
+            
+            {/* Main center bottle */}
+            <img 
+              src="/roja_elysium.png" 
+              alt="Roja Elysium Premium Perfume" 
+              className="bottle-img-main" 
             />
-            {/* Elegant Floating Card */}
-            <div className="hero-overlay-card">
-              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)' }}>
-                Главный хит недели
-              </span>
-              <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.2rem', marginTop: '0.25rem' }}>
-                Mancera Cedrat Boise
-              </h4>
-              <p className="price">$97</p>
-            </div>
+            
+            {/* Left background bottle */}
+            <img 
+              src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=600" 
+              alt="Dior Sauvage Perfume" 
+              className="bottle-img-sub1" 
+            />
+            
+            {/* Right background bottle */}
+            <img 
+              src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=600" 
+              alt="Louis Vuitton Imagination Perfume" 
+              className="bottle-img-sub2" 
+            />
           </div>
         </div>
       </div>

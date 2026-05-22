@@ -1,59 +1,49 @@
 import React from 'react';
-import { ShoppingBag, Search, Sparkles } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
-export default function Header({
-  cartCount,
-  onCartOpen,
-  searchQuery,
-  setSearchQuery,
-  scrollToCatalog,
-  scrollToQuiz,
-  scrollToTestimonials,
-  scrollToFooter
-}) {
+export default function Header({ lang, setLang, t, onOpenModal }) {
   return (
     <header className="header">
       <div className="container header-container">
-        {/* Logo */}
-        <a href="/" className="logo">
-          V I T R I N <span>E</span>
-        </a>
+        {/* Logo and Slogan */}
+        <div className="logo-group">
+          <a href="/" className="logo">
+            VITRINE<span>.</span>
+          </a>
+          <span className="logo-slogan">{t.slogan}</span>
+        </div>
 
-        {/* Navigation Links */}
-        <nav>
-          <ul className="nav-links">
-            <li>
-              <button onClick={scrollToCatalog}>Каталог</button>
-            </li>
-            <li>
-              <button onClick={scrollToQuiz} style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                <Sparkles size={14} style={{ color: 'var(--accent-gold)' }} /> Подбор Аромата
-              </button>
-            </li>
-            <li>
-              <button onClick={scrollToTestimonials}>Отзывы</button>
-            </li>
-            <li>
-              <button onClick={scrollToFooter}>Контакты</button>
-            </li>
-          </ul>
-        </nav>
-
-        {/* Actions (Search & Cart) */}
+        {/* Actions (Language Switcher, Phone, CTA) */}
         <div className="header-actions">
-          <div className="search-bar">
-            <Search size={16} style={{ color: 'var(--text-secondary)' }} />
-            <input
-              type="text"
-              placeholder="Поиск парфюма..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
+          {/* Language Switcher */}
+          <div className="lang-switcher">
+            <button 
+              className={`lang-btn ${lang === 'uz' ? 'active' : ''}`} 
+              onClick={() => setLang('uz')}
+            >
+              UZ
+            </button>
+            <button 
+              className={`lang-btn ${lang === 'ru' ? 'active' : ''}`} 
+              onClick={() => setLang('ru')}
+            >
+              RU
+            </button>
+            <button 
+              className={`lang-btn ${lang === 'en' ? 'active' : ''}`} 
+              onClick={() => setLang('en')}
+            >
+              EN
+            </button>
           </div>
 
-          <button className="icon-btn" onClick={onCartOpen} aria-label="Корзина">
-            <ShoppingBag size={20} />
-            {cartCount > 0 && <span className="badge">{cartCount}</span>}
+          <a href="tel:+998901234567" className="header-phone">
+            <Phone size={16} />
+            <span>+998 (90) 123-45-67</span>
+          </a>
+          
+          <button className="header-btn" onClick={() => onOpenModal()}>
+            {t.installments}
           </button>
         </div>
       </div>
