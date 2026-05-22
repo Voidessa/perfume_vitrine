@@ -6,7 +6,7 @@ export default function Footer({ t, scrollToCatalog }) {
     <footer className="footer" id="contacts">
       <div className="container">
         <div className="footer-logo">
-          VITRINE<span>.</span>
+          Mancerra Parfume<span>.</span>
         </div>
         
         {/* Navigation */}
@@ -32,7 +32,7 @@ export default function Footer({ t, scrollToCatalog }) {
         </div>
 
         <div className="footer-copy">
-          <p>&copy; {new Date().getFullYear()} VITRINE. {t.footerRights}</p>
+          <p>&copy; {new Date().getFullYear()} Mancerra Parfume. {t.footerRights}</p>
           <div style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
             {t.footerPayment}
           </div>

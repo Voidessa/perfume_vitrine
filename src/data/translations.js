@@ -5,20 +5,20 @@ export const translations = {
     installments: "Bo'lib to'lash",
     
     // Hero
-    ramadanBadge: "Ramazon oyiga maxsus aksiya 🌙 — Vitrine'dan!",
+    ramadanBadge: "Ramazon oyiga maxsus aksiya 🌙 — Mancerra Parfume'dan!",
     bonusBadge: "Mini-tester, sovg'a qutisi va bepul yetkazib berish - BONUS",
     mainHeading: "Original brend parfyumlar atigi 97$ dan boshlab sizniki!",
-    heroDesc: "Hech qanday ortiqcha to'lovlarsiz. Kafolatlangan 100% original sifat. Bepul maslahat va tezkor yetkazib berish. Toshkent shahar bo'ylab yetkazib berish bepul.",
+    heroDesc: "Hech qanday ortiqcha to'lovlarsiz. Kafolatlangan 100% original sifat. Bepul maslahat va Toshkent bo'ylab bepul yetkazib berish.",
     heroCta: "BO'LIB TO'LASH SHARTLARINI BILISH!",
     
     // Advantages
     advTitle: "Bizning Afzalliklarimiz",
     advPill: "Afzallik",
     advantages: [
-      "100% original parfyumlar doimiy mavjud",
-      "Qulay to‘lov usullari – naqd, karta va bo‘lib to‘lash",
-      "Har oy 1000+ mamnun va doimiy xaridorlar",
-      "Eski atiringizni topshiring – yangisini chegirma bilan oling! (Trade-in)"
+      "100% original parfyumlar doimiy ravishda mavjud",
+      "Qulay to'lov usullari – naqd pul, karta va bo'lib to'lash",
+      "Har oy 1000+ mamnun va doimiy mijozlar",
+      "Eski atiringizni topshiring va yangisini chegirma bilan oling! (Trade-in)"
     ],
     
     // Catalog
@@ -38,12 +38,12 @@ export const translations = {
     labelName: "Ismingiz",
     labelPhone: "Telefon raqamingiz",
     labelProduct: "Tanlangan mahsulot",
-    labelRegion: "Pasport bo'yicha yashash hududingiz",
+    labelRegion: "Yashash hududingiz (pasport bo'yicha)",
     placeholderRegion: "Hududni tanlang...",
     submitBtn: "YUBORISH",
     alertFill: "Iltimos, barcha maydonlarni to'ldiring!",
     successTitle: "Muvaffaqiyatli!",
-    successDesc: "Arizangiz muvaffaqiyatli qabul qilindi. Tez orada mutaxassislarimiz siz bilan bog'lanishadi!",
+    successDesc: "Arizangiz muvaffaqiyatli qabul qilindi. Mutaxassislarimiz tez orada siz bilan bog'lanishadi!",
     successClose: "YOPISH",
     
     // Footer
@@ -52,62 +52,62 @@ export const translations = {
     footerHours: "Har kuni:",
     footerAddress: "Toshkent sh., Yunusobod tumani",
     footerRights: "Barcha huquqlar himoyalangan.",
-    footerPayment: "To'lov turlari: Click, Payme, Naqd pul va Bo'lib to'lash (Nasiya)",
+    footerPayment: "To'lov turlari: Click, Payme, naqd pul va nasiya (bo'lib to'lash)",
 
-    // Perfume Specific Data (Translatable descriptions/badges/notes)
+    // Perfume Specific Data
     perfumes: {
       creed: {
-        badge: "Бестселлер",
-        description: "Mashhur erkaklar atri. Muzaffarlik, kuch va jasorat ramzi bo'lib, ananas va dudlangan qayin notalarining yorqin uyg'unligidir.",
+        badge: "Bestseller",
+        description: "Mashhur erkaklar atri. Muzaffarlik, kuch va jasorat ramzi — ananas va dudlangan qayin notalarining yorqin uyg'unligi.",
         top: "Ananas, Bergamot, Qora smorodina, Olma",
         heart: "Qayin, Pachuli, Marokash jasmini, Atorgul",
         base: "Muskus, Eman moxi, Kulrang ambra, Vanil"
       },
       lv: {
         badge: "Eksklyuziv",
-        description: "Nafis sitrusli tarovat, qora choy va iliq ambroksanning asil notalari bilan uyg'unlashgan.",
+        description: "Qora choy va iliq ambroksanning asil notalari bilan uyg'unlashgan nafis sitrusli tarovat.",
         top: "Kalabriya bergamoti, Sitsiliya apelsini",
         heart: "Zanjabil, Neroli, Seylon choyi",
         base: "Ambroksan, Gvayako daraxti, Olibanum"
       },
       montabaco: {
         badge: "Yangi",
-        description: "Rio-de-Janeyro muhitidan ilhomlangan yorqin va suvli ifor. Ekzotik mevalar va yumshoq tamaki barglari ohangi.",
+        description: "Rio-de-Janeyro muhitidan ilhomlangan yorqin va boy ifor. Ekzotik mevalar va yumshoq tamaki barglari uyg'unligi.",
         top: "Yovvoyi mevalar, Karamel, Rovar, Bergamot",
         heart: "Tamaki, Choy, Mango, Kashmeran",
         base: "Zamsha, Sandal, Vanil, Eman moxi, Muskus"
       },
       dior: {
         badge: "Xaridorlar tanlovi",
-        description: "Asil va yovvoyi. Kalabriya bergamotining yangiligi vanilning baxmaldek tuyg'usi bilan birlashadi.",
+        description: "Asil va yovvoyi ifor. Kalabriya bergamotining tetikligi vanilning baxmaldek tuyg'usi bilan birlashadi.",
         top: "Kalabriya bergamoti",
         heart: "Sichuan qalampiri, Lavanda, Yulduzli anis",
         base: "Ambroksan, Papua vanili"
       },
       clive: {
         badge: "Klassika",
-        description: "Klassik Britaniya parfyumeriyasining durdonasi. Boy sitrus-o'tli guldasta va chuqur yog'ochli asos.",
+        description: "Klassik Britaniya parfyumeriyasining durdonasi. Boy sitrus-o'tli ifor va chuqur yog'ochli asos.",
         top: "Laym, Galbanum, Greypfrut, Rozmarin",
         heart: "Siklamen, Shalfey, Neroli, Freziya",
         base: "Virjiniya kedri, Sandal, Pachuli, Ambra"
       },
       boadicea: {
         badge: "Noyob",
-        description: "Qirollik darajasidagi teran ifor. Qimmatbaho ud, ziravorlar va nozik atorgul notalari bilan boy sharqona kompozitsiya.",
+        description: "Qirollik darajasidagi teran ifor. Qimmatbaho ud daraxti, ziravorlar va nozik atorgul notalaridan iborat hashamatli sharqona kompozitsiya.",
         top: "Limon, Moychechak, Shalfey, Za'faron, Kadife",
         heart: "Turk atorguli, Hind jasmini, Magnoliya",
         base: "Ud daraxti, Pachuli, Kulrang ambra"
       },
       roja: {
         badge: "Xit savdo",
-        description: "G'oyat toza va jarangdor sitrus-yog'ochli atir. Yengil va asil zamsha asosiga silliq o'tadi.",
+        description: "G'oyat toza va yorqin sitrus-yog'ochli atir. Yengil va asil zamsha asosiga silliq o'tadi.",
         top: "Greypfrut, Limon, Laym, Bergamot, Timyan",
         heart: "Vetiver, Archa mevalari, Qora smorodina",
         base: "Kulrang ambra, Teri, Vanil, Benzoin, Kedr"
       },
       chanel: {
         badge: "Klassika",
-        description: "Zamonaviy erkaklar nafosatining mezoni. Sitrusli tarovat va asil ladan ohanglarining ideal balansi.",
+        description: "Zamonaviy erkaklar nafosati mezoni. Sitrusli tarovat va asil ladan ohanglarining ideal muvozanati.",
         top: "Greypfrut, Limon, Yalpiz, Pushti qalampir",
         heart: "Zanjabil, Muskat yong'og'i, Jasmin, ISO E Super",
         base: "Ladan, Vetiver, Kedr, Sandal, Pachuli"
@@ -116,14 +116,14 @@ export const translations = {
   },
   ru: {
     // Header
-    slogan: "Давайте сделаем это возможным!",
+    slogan: "Мы делаем это возможным!",
     installments: "Рассрочка",
     
     // Hero
-    ramadanBadge: "Специальная акция к Рамадану 🌙 — от Vitrine!",
+    ramadanBadge: "Специальная акция к Рамадану 🌙 — от Mancerra Parfume!",
     bonusBadge: "Мини-тестер, подарочная коробка и бесплатная доставка - БОНУС",
-    mainHeading: "Оригинальные брендовые парфюмы ваши всего от 97$!",
-    heroDesc: "Без каких-либо переплат. Гарантия 100% оригинального качества. Бесплатная консультация и быстрая доставка. Доставка по Ташкенту бесплатная.",
+    mainHeading: "Оригинальные брендовые парфюмы всего от 97$!",
+    heroDesc: "Без переплат. Гарантия 100% оригинального качества. Бесплатная консультация и быстрая доставка по Ташкенту.",
     heroCta: "УЗНАТЬ УСЛОВИЯ РАССРОЧКИ!",
     
     // Advantages
@@ -131,9 +131,9 @@ export const translations = {
     advPill: "Преимущество",
     advantages: [
       "100% оригинальные парфюмы всегда в наличии",
-      "Удобные способы оплаты – наличные, карта и рассрочка",
-      "Более 1000+ довольных и постоянных покупателей каждый месяц",
-      "Сдайте свой старый флакон – получите новый со скидкой! (Trade-in)"
+      "Удобные способы оплаты: наличные, карта и рассрочка",
+      "Более 1000 довольных клиентов каждый месяц",
+      "Сдайте старый флакон и получите новый со скидкой (Trade-in)"
     ],
     
     // Catalog
@@ -169,7 +169,7 @@ export const translations = {
     footerRights: "Все права защищены.",
     footerPayment: "Способы оплаты: Click, Payme, Наличные и Рассрочка (Насия)",
 
-    // Perfume Specific Data (Translatable descriptions/badges/notes)
+    // Perfume Specific Data
     perfumes: {
       creed: {
         badge: "Бестселлер",
@@ -235,20 +235,20 @@ export const translations = {
     installments: "Installments",
     
     // Hero
-    ramadanBadge: "Ramadan special promotion 🌙 — from Vitrine!",
+    ramadanBadge: "Ramadan special promotion 🌙 — from Mancerra Parfume!",
     bonusBadge: "Mini-tester, gift box and free shipping - BONUS",
-    mainHeading: "Original brand perfumes are yours starting from only 97$!",
-    heroDesc: "No extra charges. Guaranteed 100% original quality. Free consultation and fast shipping. Free delivery within Tashkent city.",
+    mainHeading: "Original brand perfumes starting from only 97$!",
+    heroDesc: "No extra charges. Guaranteed 100% original quality. Free consultation and fast delivery in Tashkent.",
     heroCta: "LEARN INSTALLMENT TERMS!",
     
     // Advantages
     advTitle: "Our Advantages",
     advPill: "Advantage",
     advantages: [
-      "100% original brand perfumes always in stock",
-      "Convenient payment methods – cash, card and installments",
-      "Over 1000+ happy and loyal customers monthly",
-      "Trade in your old perfume – get a new one with a discount! (Trade-in)"
+      "100% original perfumes in stock",
+      "Convenient payment methods: cash, card, and installments",
+      "Over 1000+ satisfied customers every month",
+      "Trade in your old perfume and get a new one with a discount (Trade-in)"
     ],
     
     // Catalog
@@ -280,15 +280,15 @@ export const translations = {
     footerNavCatalog: "Our Assortment",
     footerNavContact: "Contact",
     footerHours: "Daily:",
-    footerAddress: "Toshkent city, Yunusabad district",
+    footerAddress: "Tashkent city, Yunusabad district",
     footerRights: "All rights reserved.",
     footerPayment: "Payment methods: Click, Payme, Cash and Installments",
 
-    // Perfume Specific Data (Translatable descriptions/badges/notes)
+    // Perfume Specific Data
     perfumes: {
       creed: {
         badge: "Bestseller",
-        description: "The legendary masculine fragrance. A symbol of success, strength, and courage, with bright notes of pineapple and smoky birch.",
+        description: "The legendary fragrance. A symbol of success, strength, and courage, with bright notes of pineapple and smoky birch.",
         top: "Pineapple, Bergamot, Black Currant, Apple",
         heart: "Birch, Patchouli, Moroccan Jasmine, Rose",
         base: "Musk, Oakmoss, Ambergris, Vanilla"

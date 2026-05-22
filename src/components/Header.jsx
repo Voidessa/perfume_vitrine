@@ -8,7 +8,7 @@ export default function Header({ lang, setLang, t, onOpenModal }) {
         {/* Logo and Slogan */}
         <div className="logo-group">
           <a href="/" className="logo">
-            VITRINE<span>.</span>
+            Mancerra Parfume<span>.</span>
           </a>
           <span className="logo-slogan">{t.slogan}</span>
         </div>
