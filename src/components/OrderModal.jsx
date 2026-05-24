@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { X, Check } from 'lucide-react';
 
-export default function OrderModal({ isOpen, onClose, initialProduct, lang, t }) {
+export default function OrderModal({ isOpen, onClose, lang, t }) {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('+998 ');
-  const [product, setProduct] = useState('');
+  const [selectedProducts, setSelectedProducts] = useState([]);
   const [region, setRegion] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -42,16 +42,6 @@ export default function OrderModal({ isOpen, onClose, initialProduct, lang, t })
 
   const currentRegions = regionsListByLang[lang] || regionsListByLang.uz;
 
-  // Sync initial product if passed
-  useEffect(() => {
-    if (initialProduct) {
-      const found = perfumesList.find(p => p.toLowerCase().includes(initialProduct.toLowerCase()));
-      setProduct(found || initialProduct);
-    } else {
-      setProduct(perfumesList[0]);
-    }
-  }, [initialProduct, isOpen]);
-
   if (!isOpen) return null;
 
   const handlePhoneChange = (e) => {
@@ -69,14 +59,14 @@ export default function OrderModal({ isOpen, onClose, initialProduct, lang, t })
       return;
     }
     
-    console.log("Lead submitted successfully:", { name, phone, product, region, lang });
+    console.log("Lead submitted successfully:", { name, phone, selectedProducts, region, lang });
     setIsSuccess(true);
   };
 
   const handleReset = () => {
     setName('');
     setPhone('+998 ');
-    setProduct(perfumesList[0]);
+    setSelectedProducts([]);
     setRegion('');
     setIsSuccess(false);
     onClose();
@@ -130,23 +120,32 @@ export default function OrderModal({ isOpen, onClose, initialProduct, lang, t })
                 />
               </div>
 
-              {/* Product Select */}
+              {/* Product Select (Multiple Checkboxes) */}
               <div className="form-group">
-                <label className="form-label" htmlFor="client-product">
+                <label className="form-label">
                   {t.labelProduct}
                 </label>
-                <select
-                  id="client-product"
-                  className="form-select"
-                  value={product}
-                  onChange={(e) => setProduct(e.target.value)}
-                >
-                  {perfumesList.map((p) => (
-                    <option key={p} value={p}>
-                      {p}
-                    </option>
-                  ))}
-                </select>
+                <div className="perfume-checkbox-list">
+                  {perfumesList.map((p) => {
+                    const isChecked = selectedProducts.includes(p);
+                    return (
+                      <label key={p} className="perfume-checkbox-item">
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={() => {
+                            if (isChecked) {
+                              setSelectedProducts(selectedProducts.filter(item => item !== p));
+                            } else {
+                              setSelectedProducts([...selectedProducts, p]);
+                            }
+                          }}
+                        />
+                        <span>{p}</span>
+                      </label>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Region Select */}

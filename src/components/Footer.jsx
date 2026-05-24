@@ -11,7 +11,6 @@ export default function Footer({ t, scrollToCatalog }) {
         
         {/* Navigation */}
         <div className="footer-nav">
-          <button onClick={() => scrollToCatalog()}>{t.footerNavCatalog}</button>
           <a href="tel:+998901234567">{t.footerNavContact}</a>
         </div>
 

@@ -2,14 +2,14 @@ export const translations = {
   uz: {
     // Header
     slogan: "Keling, ilojini qilamiz!",
-    installments: "Bo'lib to'lash",
+    installments: "Buyurtma berish",
     
     // Hero
     ramadanBadge: "Ramazon oyiga maxsus aksiya 🌙 — Mancerra Parfume'dan!",
     bonusBadge: "Mini-tester, sovg'a qutisi va bepul yetkazib berish - BONUS",
     mainHeading: "Original brend parfyumlar atigi 97$ dan boshlab sizniki!",
     heroDesc: "Hech qanday ortiqcha to'lovlarsiz. Kafolatlangan 100% original sifat. Bepul maslahat va Toshkent bo'ylab bepul yetkazib berish.",
-    heroCta: "BO'LIB TO'LASH SHARTLARINI BILISH!",
+    heroCta: "BUYURTMA BERISH!",
     
     // Advantages
     advTitle: "Bizning Afzalliklarimiz",
@@ -37,7 +37,7 @@ export const translations = {
     modalSubtitle: "Aksiyada qatnashish va bonuslarni olish uchun arizani to'ldiring",
     labelName: "Ismingiz",
     labelPhone: "Telefon raqamingiz",
-    labelProduct: "Tanlangan mahsulot",
+    labelProduct: "Mahsulotlarni tanlang",
     labelRegion: "Yashash hududingiz (pasport bo'yicha)",
     placeholderRegion: "Hududni tanlang...",
     submitBtn: "YUBORISH",
@@ -117,14 +117,14 @@ export const translations = {
   ru: {
     // Header
     slogan: "Мы делаем это возможным!",
-    installments: "Рассрочка",
+    installments: "Заказать",
     
     // Hero
     ramadanBadge: "Специальная акция к Рамадану 🌙 — от Mancerra Parfume!",
     bonusBadge: "Мини-тестер, подарочная коробка и бесплатная доставка - БОНУС",
     mainHeading: "Оригинальные брендовые парфюмы всего от 97$!",
     heroDesc: "Без переплат. Гарантия 100% оригинального качества. Бесплатная консультация и быстрая доставка по Ташкенту.",
-    heroCta: "УЗНАТЬ УСЛОВИЯ РАССРОЧКИ!",
+    heroCta: "СДЕЛАТЬ ЗАКАЗ!",
     
     // Advantages
     advTitle: "Наши Преимущества",
@@ -152,7 +152,7 @@ export const translations = {
     modalSubtitle: "Заполните заявку, чтобы принять участие в акции и получить бонусы",
     labelName: "Ваше Имя",
     labelPhone: "Номер телефона",
-    labelProduct: "Выбранный товар",
+    labelProduct: "Выберите товары",
     labelRegion: "Ваш регион по паспорту",
     placeholderRegion: "Выберите регион...",
     submitBtn: "ОТПРАВИТЬ",
@@ -232,14 +232,14 @@ export const translations = {
   en: {
     // Header
     slogan: "Let's make it happen!",
-    installments: "Installments",
+    installments: "Order Now",
     
     // Hero
     ramadanBadge: "Ramadan special promotion 🌙 — from Mancerra Parfume!",
     bonusBadge: "Mini-tester, gift box and free shipping - BONUS",
     mainHeading: "Original brand perfumes starting from only 97$!",
     heroDesc: "No extra charges. Guaranteed 100% original quality. Free consultation and fast delivery in Tashkent.",
-    heroCta: "LEARN INSTALLMENT TERMS!",
+    heroCta: "ORDER NOW!",
     
     // Advantages
     advTitle: "Our Advantages",
@@ -267,7 +267,7 @@ export const translations = {
     modalSubtitle: "Fill out the form to participate in the promo and get bonuses",
     labelName: "Your Name",
     labelPhone: "Phone Number",
-    labelProduct: "Selected Product",
+    labelProduct: "Select products",
     labelRegion: "Your passport registration region",
     placeholderRegion: "Select region...",
     submitBtn: "SUBMIT",
